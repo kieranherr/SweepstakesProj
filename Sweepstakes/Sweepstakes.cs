@@ -7,9 +7,12 @@ namespace Sweepstakes
     
     class Sweepstakes
     {
-        public Sweepstakes()
+        public string sweepName;
+        
+        public Sweepstakes(string name)
         {
-
+            sweepName = name;
         }
+     
     }
 }

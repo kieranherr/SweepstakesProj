@@ -12,7 +12,8 @@ namespace Sweepstakes
         public long regNum;
         public Contestant()
         {
-               
+
         }
+   
     }
 }
