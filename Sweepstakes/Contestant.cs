@@ -6,6 +6,10 @@ namespace Sweepstakes
 {
     class Contestant
     {
+        public string fName;
+        public string lName;
+        public string email;
+        public long regNum;
         public Contestant()
         {
                
