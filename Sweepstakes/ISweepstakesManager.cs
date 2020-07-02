@@ -8,7 +8,22 @@ namespace Sweepstakes
     {
         public ISweepstakesManager()
         {
+           
+        }
+        
+        interface ISweeptakes
+        {
+            void InsertSweepstakes(Sweepstakes sweepstakes);
+        }
+        class Sweepstake : ISweepstakesManager
+        {
+            Sweepstakes GetSweepstakes()
+            {
+                string name ="";
+                Sweepstakes sweepstakes = new Sweepstakes(name);
+                return sweepstakes;
 
+            }
         }
     }
 }
