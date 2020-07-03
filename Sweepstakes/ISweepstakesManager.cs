@@ -24,6 +24,18 @@ namespace Sweepstakes
                 return sweepstakes;
 
             }
+            public static string FirstName()
+            {
+                Console.WriteLine("What is your first name?");
+                return Console.ReadLine();
+            }
+
+            public static string LastName()
+            {
+                Console.WriteLine("What is your last name?");
+                return Console.ReadLine();
+            }
+
         }
     }
 }
