@@ -9,7 +9,7 @@ namespace Sweepstakes
         public string fName;
         public string lName;
         public string email;
-        public long regNum;
+        public string regNum;
         public Contestant()
         {
 

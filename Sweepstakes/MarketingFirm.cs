@@ -6,9 +6,17 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
+<<<<<<< HEAD
         public MarketingFirm()
         {
 
+=======
+
+
+        public MarketingFirm(string SweepName)
+        {
+            Sweepstakes sweepstakes = new Sweepstakes(SweepName);
+>>>>>>> Sweepstakes
         }
     }
 }
