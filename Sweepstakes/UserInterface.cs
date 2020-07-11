@@ -31,8 +31,8 @@ namespace Sweepstakes
         {
             Register++;
             Console.WriteLine("Your number is: " + Register);
-            return Register;
-        }
+            return Register; 
+                }
 
         public static int ClearNum()
         {
@@ -43,5 +43,4 @@ namespace Sweepstakes
     }
 
 }
-
 
