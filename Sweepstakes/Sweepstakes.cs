@@ -7,7 +7,7 @@ using System.Text;
 namespace Sweepstakes
 {
     
-    class Sweepstakes
+    public class Sweepstakes
     {
         public string sweepName;
         public Dictionary<string, Contestant> dict;

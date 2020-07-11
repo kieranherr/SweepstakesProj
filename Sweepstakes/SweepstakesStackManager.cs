@@ -12,15 +12,36 @@ namespace Sweepstakes
         {
             myStack = new Stack<Sweepstakes>();
         }
-        public void NewSweepstakes(Sweepstakes sweepstakes)
+        public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
             myStack.Push(sweepstakes);
         }
-
-        public Sweepstakes GetSweepstakes(Sweepstakes sweepstakes)
+        public Sweepstakes GetSweepstakes()
         {
             return myStack.Pop();
-
+        }
+        public bool IsContestant()
+        {
+            Sweepstakes sweepstakes = myStack.Peek();
+            if (sweepstakes.dict.Count == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        public bool IsSweepstakes()
+        {
+            if (myStack.Count == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

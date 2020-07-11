@@ -4,17 +4,14 @@ using System.Text;
 
 namespace Sweepstakes
 {
-    class ISweepstakesManager
-    {
-        public ISweepstakesManager()
-        {
-           
-        }
-        
-        interface ISweeptakes
+   
+        public interface ISweepstakesManager
         {
             void InsertSweepstakes(Sweepstakes sweepstakes);
+
         }
         
-    }
+       
+        
+    
 }
