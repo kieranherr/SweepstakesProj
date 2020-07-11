@@ -1,8 +1,4 @@
 ﻿using System;
-<<<<<<< HEAD
-=======
-using System.Collections;
->>>>>>> Sweepstakes
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,11 +6,7 @@ namespace Sweepstakes
 {
     class SweepstakesStackManager : ISweepstakesManager
     {
-<<<<<<< HEAD
-        public SweepstakesStackManager()
-        {
 
-=======
         Stack<Sweepstakes> myStack;
         public SweepstakesStackManager()
         {
@@ -28,7 +20,7 @@ namespace Sweepstakes
         public Sweepstakes GetSweepstakes(Sweepstakes sweepstakes)
         {
             return myStack.Pop();
->>>>>>> Sweepstakes
+
         }
     }
 }
