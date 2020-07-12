@@ -16,15 +16,15 @@ namespace Sweepstakes
             dict = new Dictionary<string, Contestant>();
             sweepName = name;
         }
-        public void RegisterContestant(Contestant contestant)
-        {
-            dict.Add(contestant.regNum, contestant);
-        }
         public Contestant PickWinner()
         {
             Random rnd = new Random();
             int winner = rnd.Next(0, dict.Count - 1);
             return dict.ElementAt(winner).Value;
+        }
+        public void RegisterContestant(Contestant contestant)
+        {
+            dict.Add(contestant.regNum, contestant);
         }
         public void PrintContestantInfo(Contestant contestant)
         {
