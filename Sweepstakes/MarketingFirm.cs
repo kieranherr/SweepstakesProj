@@ -6,13 +6,14 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
-        public MarketingFirm(string SweepName)
+        public ISweepstakesManager SweepManager;
+        public MarketingFirm(ISweepstakesManager sweepstakesManager)
         {
-            Sweepstakes sweepstakes = new Sweepstakes(SweepName);
+            SweepManager = sweepstakesManager;
         }
         public void NewSweep(string SweepName)
         {
-
+            SweepManager.InsertSweepstakes(UserInterface.NewSweep(SweepName));
         }
     }
 }

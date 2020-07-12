@@ -39,7 +39,10 @@ namespace Sweepstakes
             Register = 0;
             return Register;
         }
-
+        public static Sweepstakes NewSweep(string nameOfSweep)
+        {
+            return new Sweepstakes(nameOfSweep);
+        }
     }
 
 }
