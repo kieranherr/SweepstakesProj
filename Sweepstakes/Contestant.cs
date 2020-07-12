@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sweepstakes
 {
-    class Contestant
+    public class Contestant
     {
         public string fName;
         public string lName;
